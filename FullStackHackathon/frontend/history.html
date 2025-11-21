@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - PhishShield</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="shield-icon">🛡️</span> PhishShield
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="detector.html">Detector</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-2">Scan History</h2>
+                        <p class="text-muted mb-0">All your previous scans in one place</p>
+                    </div>
+                    <button class="btn btn-outline-danger" onclick="clearHistory()">
+                        🗑️ Clear All
+                    </button>
+                </div>
+
+                <div id="historyStats" class="row g-3 mb-4">
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-card-icon">📊</div>
+                            <div class="stat-card-value" id="totalScans">0</div>
+                            <div class="stat-card-label">Total Scans</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card danger">
+                            <div class="stat-card-icon">⚠️</div>
+                            <div class="stat-card-value" id="dangerScans">0</div>
+                            <div class="stat-card-label">High Risk</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card warning">
+                            <div class="stat-card-icon">⚡</div>
+                            <div class="stat-card-value" id="warningScans">0</div>
+                            <div class="stat-card-label">Suspicious</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card safe">
+                            <div class="stat-card-icon">✅</div>
+                            <div class="stat-card-value" id="safeScans">0</div>
+                            <div class="stat-card-label">Safe</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="historyList"></div>
+
+                <div id="emptyState" class="text-center py-5 d-none">
+                    <div class="empty-state-icon mb-4">📭</div>
+                    <h3 class="fw-bold mb-3">No Scan History Yet</h3>
+                    <p class="text-muted mb-4">Start scanning messages and URLs to see your history here</p>
+                    <a href="detector.html" class="btn btn-primary btn-lg">
+                        Start Scanning →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 PhishShield. Built for Hackathon. Stay Safe Online.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

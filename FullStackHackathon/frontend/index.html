@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishShield - AI-Powered Phishing Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="shield-icon">🛡️</span> PhishShield
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="detector.html">Detector</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 hero-title">Protect Yourself from Phishing Attacks</h1>
+                    <p class="lead mb-4">PhishShield uses advanced AI and behavioral analysis to detect phishing attempts in real-time. Stay safe online with our hybrid detection system.</p>
+                    <div class="d-grid gap-3 d-sm-flex">
+                        <a href="detector.html" class="btn btn-light btn-lg px-5 shadow">
+                            Start Scanning →
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="shield-container">
+                            <div class="shield-large">🛡️</div>
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring" style="animation-delay: 1s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">🎯</div>
+                        <h3 class="stat-number counter" data-target="95">0</h3>
+                        <p class="stat-label">Detection Accuracy %</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">⚡</div>
+                        <h3 class="stat-number"><span class="counter" data-target="2">0</span>s</h3>
+                        <p class="stat-label">Analysis Time</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">🔒</div>
+                        <h3 class="stat-number counter" data-target="3">0</h3>
+                        <p class="stat-label">Detection Layers</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">💯</div>
+                        <h3 class="stat-number">Free</h3>
+                        <p class="stat-label">Always Free to Use</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 py-5">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="fw-bold display-6">How PhishShield Works</h2>
+                <p class="text-muted lead">Multi-layered protection using advanced technology</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon-large mb-4">🤖</div>
+                    <h4 class="fw-bold mb-3">Machine Learning</h4>
+                    <p class="text-muted">Our AI model analyzes text patterns using TF-IDF vectorization and Logistic Regression to identify phishing attempts with high accuracy.</p>
+                    <div class="feature-badge">Layer 1</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon-large mb-4">📋</div>
+                    <h4 class="fw-bold mb-3">Rule-Based Engine</h4>
+                    <p class="text-muted">Checks for known phishing indicators including suspicious URLs, urgency keywords, and brand impersonation attempts.</p>
+                    <div class="feature-badge">Layer 2</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon-large mb-4">🧠</div>
+                    <h4 class="fw-bold mb-3">Psychology Detection</h4>
+                    <p class="text-muted">Identifies manipulation tactics like urgency, fear, authority, and reward that scammers use to trick victims.</p>
+                    <div class="feature-badge">Layer 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Stay Safe?</h2>
+            <p class="lead mb-4">Start scanning suspicious messages and URLs now</p>
+            <a href="detector.html" class="btn btn-light btn-lg px-5 shadow-lg">
+                Launch Detector →
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 PhishShield. Built for Hackathon. Stay Safe Online.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

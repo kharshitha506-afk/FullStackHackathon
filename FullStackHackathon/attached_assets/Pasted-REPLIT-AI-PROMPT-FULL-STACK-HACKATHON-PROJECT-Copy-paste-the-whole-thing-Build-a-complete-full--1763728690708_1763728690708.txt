@@ -1,0 +1,157 @@
+REPLIT AI PROMPT (FULL-STACK HACKATHON PROJECT)
+
+Copy–paste the whole thing:
+
+Build a complete full-stack project named “PhishShield – Hybrid Phishing & Scam Detection System”.
+Create both the frontend and backend with full integration.
+Use HTML/CSS/JS for the frontend and Python Flask for the backend.
+Include a simple ML model (Logistic Regression + TF-IDF) for phishing text classification.
+Use a rule-based engine + psychology trigger detector.
+Make everything run inside Replit.
+
+🎯 PROJECT REQUIREMENTS
+1. Pages to Create
+
+Create a clean frontend with these pages:
+
+Home Page
+
+Project intro
+
+Buttons: Scan Message, Scan URL, About
+
+Scan Message Page
+
+Textarea input
+
+Button to analyze message
+
+Display results:
+
+Rule-based output
+
+ML prediction (phishing or safe)
+
+Psychology triggers
+
+Final verdict (badge)
+
+Scan URL Page
+
+URL input
+
+Button to scan
+
+Display results:
+
+URL safety checks
+
+ML score
+
+Final phishing verdict
+
+About Page
+
+Team
+
+Tech stack
+
+Hackathon purpose
+
+🎨 Frontend Requirements
+
+Use:
+
+HTML
+
+CSS
+
+JavaScript
+
+Bootstrap (optional)
+
+Create folder structure:
+
+/frontend
+   index.html
+   scan-message.html
+   scan-url.html
+   about.html
+   /assets
+       style.css
+       script.js
+
+
+Frontend uses fetch() to call backend:
+
+fetch("http://localhost:5000/analyze_message")
+fetch("http://localhost:5000/scan_url")
+
+🧠 Backend Requirements (Flask)
+
+Create:
+
+/backend
+   app.py
+   rules.py
+   utils.py
+   model.pkl
+   vectorizer.pkl
+   requirements.txt
+
+
+Backend must include:
+
+/analyze_message POST endpoint
+
+/scan_url POST endpoint
+
+Rule-based detection
+
+Psychology trigger detection (urgency, fear, authority, reward)
+
+ML model with TF-IDF + Logistic Regression
+
+Return results as JSON
+
+Enable CORS so frontend works.
+
+🔗 FULL INTEGRATION
+
+Make sure:
+
+Frontend calls backend via fetch
+
+JSON results are parsed and shown in UI
+
+Both run correctly on Replit
+
+🚀 Setup & Run Instructions
+
+At the end, generate steps:
+
+How to install dependencies
+
+How to train the model
+
+How to run Flask
+
+How to preview frontend
+
+How to deploy the backend
+
+📦 OUTPUT FORMAT
+
+Provide:
+
+Full code for all files
+
+Folder structure
+
+Integration code
+
+Instructions
+
+API documentation
+
+Make sure everything is clean, readable, and hackathon-friendly.
